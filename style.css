@@ -10,6 +10,10 @@ body {
 }
 
 /* Navbar styles */
+
+.logo {
+    max-width: 50%;
+}
 .navbar {
     position: absolute;
     top: 0;
@@ -123,3 +127,16 @@ section {
 }
 
 
+/* Esconder o botão em telas maiores que 768px */
+@media (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+/* Mostrar o botão em telas menores que 768px */
+@media (max-width: 768px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
