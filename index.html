@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/logo-icon.jpeg" type="image/x-icon">
-    <title>Tedeschi Veículos</title>
+    <title>Tedeschi Veículos - Serviços de Pintura Automotiva</title>
+
+    <!-- meta tags de título e descrição a cada página. Esses elementos são cruciais para que os motores de busca entendam o conteúdo da sua página. -->
+    <meta name="description" content="Tedeschi Veículos oferece serviços de pintura automotiva de alta qualidade em Campinas, SP. Renovação, retoques, personalização e mais.">
+
 </head>
 
 <body>
@@ -16,7 +20,7 @@
                 <button type="button" class="navbar-toggle" id="menu-toggle">
                     <img src="imagens/icon-menu.png" alt="Menu">
                 </button>
-                <img class="logo" src="imagens/logo-.jpg">
+                <img class="logo" src="imagens/logo-.jpg" alt="Logo da Tedeschi Veículos">
             </div>
             <div class="navbar-menu" id="navbar-menu">
                 <ul>
@@ -142,6 +146,41 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- SEO ajustar depois -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "AutoRepair",
+          "name": "Tedeschi Veículos",
+          "image": "https://www.seusite.com/imagens/logo-.jpg",
+          "@id": "https://www.seusite.com",
+          "url": "https://www.seusite.com",
+          "telephone": "(019) 9988-3490",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rua Santa Margarida Maria Alacoque, N° 735",
+            "addressLocality": "Campinas",
+            "addressRegion": "SP",
+            "postalCode": "13033390",
+            "addressCountry": "BR"
+          },
+          "description": "Tedeschi Veículos oferece serviços de pintura automotiva de alta qualidade em Campinas, SP.",
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+          }]
+        }
+        </script>
+        
 </body>
 
 </html>

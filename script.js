@@ -6,3 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
         navbarMenu.classList.toggle('open');
     });
 });
+
+
+//SEO
