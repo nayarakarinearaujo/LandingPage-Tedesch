@@ -14,12 +14,13 @@ body {
 .logo {
     max-width: 50%;
 }
+
 .navbar {
     position: absolute;
     top: 0;
     width: 100%;
     z-index: 10;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar .container {
@@ -53,7 +54,7 @@ body {
 .cabecalho {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     overflow: hidden;
     text-align: center;
 }
@@ -63,28 +64,29 @@ body {
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #d3d3d3; /* Cor inicial do texto */
-    font-size: 4em; /* Aumentar o tamanho da fonte */
-    text-shadow: 3px 3px 6px rgba(60, 75, 98, 0.8); /* Aumentar a sombra para mais destaque */
+    color: #d3d3d3;
+    font-size: 4em;
+    text-shadow: 3px 3px 6px rgba(60, 75, 98, 0.8);
     z-index: 2;
-    background: rgba(60, 75, 98, 0.7); /* Fundo com #3c4b62 e 70% opacidade */
-    padding: 20px 40px; /* Aumentar o padding para mais destaque */
+    background: rgba(60, 75, 98, 0.7);
+    padding: 20px 40px;
     border-radius: 10px;
-    border: 2px solid #8b94a2; /* Adicionar um contorno ao texto */
+    border: 2px solid #8b94a2;
     animation: glow 1.5s infinite alternate;
     transition: color 0.3s ease, background 0.3s ease, border 0.3s ease;
 }
 
 .cabecalho .nome-empresa:hover {
-    color: #e4e4e6; /* Cor do texto ao passar o mouse */
-    background: rgba(116, 116, 116, 0.8); /* Fundo com #747474 e 80% opacidade */
-    border: 2px solid #d3d3d3; /* Alterar a cor do contorno ao passar o mouse */
+    color: #e4e4e6;
+    background: rgba(116, 116, 116, 0.8);
+    border: 2px solid #d3d3d3;
 }
 
 @keyframes glow {
     from {
         text-shadow: 0 0 20px #d3d3d3, 0 0 30px #d3d3d3, 0 0 40px #8b94a2, 0 0 50px #8b94a2, 0 0 60px #8b94a2, 0 0 70px #8b94a2;
     }
+
     to {
         text-shadow: 0 0 30px #d3d3d3, 0 0 40px #8b94a2, 0 0 50px #8b94a2, 0 0 60px #8b94a2, 0 0 70px #8b94a2, 0 0 80px #8b94a2;
     }
@@ -93,7 +95,7 @@ body {
 .header-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the header */
+    object-fit: cover;
 }
 
 section {
@@ -103,6 +105,7 @@ section {
 .titulo {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .container {
@@ -110,28 +113,94 @@ section {
     margin: 0 auto;
 }
 
-.rodape {
-    background: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+/* Seção redes de contato */
+
+.redes-contato {
+    box-shadow: 0 0 10px rgba(60, 75, 98, 0.5);
+    margin-bottom: 10px;
+    margin-left: 10px; /* Margem à esquerda */
+    margin-right: 10px; /* Margem à direita */
 }
 
-.rodape a {
-    color: white;
+.redes-contato h2 {
+    font-size: 1.5rem;
+}
+
+.redes-contato a {
     text-decoration: none;
 }
 
-.rodape a:hover {
-    text-decoration: underline;
+
+
+/* Seção contato */
+
+#contato {
+    box-shadow: #3c4b62;
+}
+
+#contato p {
+    font-size: 1rem;
+}
+
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contato-img {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.contato-form .titulo {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contato-form input[type="text"],
+.contato-form input[type="tel"],
+.contato-form input[type="email"],
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contato-form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3c4b62;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contato-form button[type="submit"]:hover {
+    background-color: #8b94a2;
 }
 
 
-
-
-
-
-
+/* Seção endereço */
 .endereco-info {
     font-size: 1.2em;
     line-height: 1.6;
@@ -145,7 +214,7 @@ section {
 }
 
 #endereco {
-    background-color: #f9f9f9;
+    background-color: #d3d3d3;
     padding: 20px;
     margin-top: 20px;
     border-radius: 8px;
@@ -168,6 +237,25 @@ section {
     border: 0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Seção Rodape */
+
+.rodape {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.rodape a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    text-decoration: underline;
 }
 
 

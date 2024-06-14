@@ -9,7 +9,8 @@
     <title>Tedeschi Veículos - Serviços de Pintura Automotiva</title>
 
     <!-- meta tags de título e descrição a cada página. Esses elementos são cruciais para que os motores de busca entendam o conteúdo da sua página. -->
-    <meta name="description" content="Tedeschi Veículos oferece serviços de pintura automotiva de alta qualidade em Campinas, SP. Renovação, retoques, personalização e mais.">
+    <meta name="description"
+        content="Tedeschi Veículos oferece serviços de pintura automotiva de alta qualidade em Campinas, SP. Renovação, retoques, personalização e mais.">
 
 </head>
 
@@ -96,17 +97,44 @@
     </article>
 
     <section id="contato">
-        <h1>Agende seu Serviço Hoje Mesmo!</h1>
+        <h1 class="titulo">Agende seu Serviço Hoje Mesmo!</h1>
+
+        <article class="redes-contato">
+            <div>
+            <h2>Entre em contato conosco pelo telefone abaixo:
+
+                <p><a href="https://wa.me/5519988934901" target="_blank" rel="external">
+                        <img src="imagens/icons8-whatsapp-48.png" alt="WhatsApp">
+                        Telefone: (019) / (019)
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:tedeschiveiculos@ig.com.br">
+                        <img src="imagens/icons8-envelope-48.png" alt="E-mail"> E-mail: tededchiveiculos@ig.com.br
+                    </a>
+                </p>
+            </div>
+
+        </article>
+
+        </h2>
         <P>Preencha o formulário abaixo.</P>
-        <div>
-            <h2 class="titulo">CONTATO</h2>
-            <form id="contatoForm">
-                <input type="text" id="name" name="name" placeholder="Seu nome" required>
-                <input type="tel" id="tel" name="Telefone" placeholder="Seu Telefone" required>
-                <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
-                <textarea id="message" name="message" placeholder="Sua Mensagem"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="contato">
+
+            <div class="contato-img">
+                <img src="imagens/icons8-envelope-240.png" alt="Imagem de um envelope fechado">
+            </div>
+
+            <div class="contato-form">
+                <h2 class="titulo">CONTATO</h2>
+                <form id="contatoForm">
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    <input type="tel" id="tel" name="Telefone" placeholder="Seu Telefone" required>
+                    <input type="email" id="email" name="email" placeholder="Seu E-mail" required>
+                    <textarea id="message" name="message" placeholder="Sua Mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -120,24 +148,15 @@
                 <p>CEP: 13033390</p>
             </div>
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1837.7243797314516!2d-47.099712!3d-22.896813000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c7d338b69f57%3A0x3f742490158c10ca!2sR.%20Santa%20Margarida%20Maria%20Alacoque%2C%20735%20-%20Jardim%20Bandeirantes%2C%20Campinas%20-%20SP%2C%2013033-390%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1717156276088!5m2!1spt-BR!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1837.7243797314516!2d-47.099712!3d-22.896813000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c7d338b69f57%3A0x3f742490158c10ca!2sR.%20Santa%20Margarida%20Maria%20Alacoque%2C%20735%20-%20Jardim%20Bandeirantes%2C%20Campinas%20-%20SP%2C%2013033-390%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1717156276088!5m2!1spt-BR!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
-    <article class="redes-contato">
-        <p><a href="https://wa.me/5519988934901" target="_blank" rel="external">
-                <img src="imagens/whatsapp (1).png" alt="WhatsApp">
-                Telefone: (019) / (019)
-            </a>
-        </p>
-        <p>
-            <img src="imagens/o-email.png" alt="E-mail">E-mail:tedeschiveiculos@ig.com.br
-        </p>
-        <p>
 
-        </p>
-    </article>
 
     <footer class="rodape">
         <div>
@@ -180,7 +199,7 @@
           }]
         }
         </script>
-        
+
 </body>
 
 </html>
