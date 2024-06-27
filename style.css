@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
@@ -136,16 +135,17 @@ section {
     color: var(--cor-title);
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 /* Seção sobre */
 
+#sobre {
+    align-items: flex-start;
+}
+
 .sobre-texto {
-    font-size: 1.2rem;
-    font-family: var(--font-two);
+    font-size: 2rem;
+    font-family: var(--font-one);
+    text-decoration: dashed;
 }
 
 /* Seção serviços */
@@ -154,16 +154,61 @@ section {
     background: var(--cor-body);
 }
 
-#servicos ul li {
-    font-family: var(--font-two);
+.container-servicos {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
+#servicos ul li {
+    font-family: var(--font-two);
+    font-size: 1.3rem;
+}
+
+#servicos li {
+    margin-bottom: 10px;
+}
+
+
+.bold {
+    font-weight: bold;
+    color: var(--cor-title);
+}
+
+/* Container Trabalho */
 .container-trabalho {
-    margin-left: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(60, 75, 98, 0.5);
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
 .container-trabalho h2 {
     background: var(--cor-subtitle);
+    margin-bottom: 10px
+}
+
+.container-trabalho h3 {
+    font-size: 1.6rem;
+    align-items: center;
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+
+.container-trabalho ul li {
+    font-size: 1rem;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.container-trabalho ul {
+    padding: 0;
+}
+
+.container-trabalho li {
+    margin-bottom: 10px;
 }
 
 /* Seção redes de contato */
