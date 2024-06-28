@@ -4,8 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/logo-icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="LandingPage-Tedesch/src/style.css">
+    <link rel="shortcut icon" href="LandingPage-Tedesch/imagens/imagens/logo-icon.jpeg" type="image/x-icon">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
     <title>Tedeschi Veículos - Serviços de Pintura Automotiva</title>
 
     <!-- meta tags de título e descrição a cada página. Esses elementos são cruciais para que os motores de busca entendam o conteúdo da sua página. -->
@@ -19,9 +23,9 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" id="menu-toggle">
-                    <img src="imagens/icon-menu.png" alt="Menu">
+                    <img src="LandingPage-Tedesch/imagens/imagens/icon-menu.png" alt="Menu">
                 </button>
-                <img class="logo" src="imagens/logo-.jpg" alt="Logo da Tedeschi Veículos">
+                <img class="logo" src="LandingPage-Tedesch/imagens/imagens/logo-.jpg" alt="Logo da Tedeschi Veículos">
             </div>
             <div class="navbar-menu" id="navbar-menu">
                 <ul>
@@ -29,6 +33,7 @@
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#fotos">Fotos</a></li>
                     <li><a href="#contato">Contato</a></li>
                     <li><a href="#endereco">Endereço</a></li>
                 </ul>
@@ -38,7 +43,7 @@
 
     <header class="cabecalho">
         <h1 class="nome-empresa">TEDESCHI VEÍCULOS</h1>
-        <img src="imagens/foto-capa-header.jpg" alt="Foto de uma mercedez com o farol aceso" class="header-img">
+        <img src="LandingPage-Tedesch/imagens/imagens/foto-capa-header.jpg" alt="Foto de uma mercedez com o farol aceso" class="header-img">
     </header>
 
     <section id="sobre">
@@ -85,51 +90,272 @@
     </section>
 
     <section id="beneficios">
-        <div>
+        <div class="container-beneficios">
             <h2 class="titulo">BENEFÍCIOS</h2>
             <h3>Por Que Escolher a Oficina Tedeschi?</h3>
             <ul>
-                <li>Qualidade Garantida: Usamos apenas tintas e materiais de alta qualidade para assegurar um acabamento
+                <li><span class="bold">Qualidade Garantida:</span> Usamos apenas tintas e materiais de alta qualidade
+                    para assegurar um acabamento
                     duradouro e resistente.</li>
-                <li>Equipe Especializada: Profissionais treinados e com vasta experiência no setor automotivo.</li>
-                <li>Tecnologia de Ponta: Equipamentos modernos para um serviço rápido e eficiente.</li>
-                <li>Satisfação do Cliente: Prioridade máxima na satisfação do cliente com avaliações e feedbacks
+                <li><span class="bold">Equipe Especializada:</span> Profissionais treinados e com vasta experiência no
+                    setor automotivo.</li>
+                <li><span class="bold">Tecnologia de Ponta:</span> Equipamentos modernos para um serviço rápido e
+                    eficiente.</li>
+                <li><span class="bold">Satisfação do Cliente:</span> Prioridade máxima na satisfação do cliente com
+                    avaliações e feedbacks
                     positivos.</li>
             </ul>
         </div>
     </section>
 
-    <article class="fotos">
-        <!-- colocar carrossel de fotos -->
-    </article>
+
+    <div id="fotos" class="album">
+        <h2>FOTOS SERVIÇOS</h2>
+
+        <section class="reforma">
+            <h3>Reforma</h3>
+            <div id="carouselReforma" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro.funilaria1.jpg" 
+                                    alt="Foto de reforma 1">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro.funilaria2.jpg" 
+                                    alt="Foto de reforma 2">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro.funilaria3.jpg" 
+                                    alt="Foto de reforma 3">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro.funilaria4.jpg" 
+                                    alt="Foto de reforma 4">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselReforma" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselReforma" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        
+
+        <section class="batidas">
+            <h3>Batidas com Sinistro</h3>
+            <div id="carouselBatidas" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração1.jpg" 
+                                    alt="Foto de restauração 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração2.jpg" 
+                                    alt="Foto de restauração 2">
+                            </div>
+                        </div>
+                    </div>
+<!-- 
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração3.jpg" 
+                                    alt="Foto de restauração 3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração4.jpg" 
+                                    alt="Foto de restauração 4">
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração5.jpg" 
+                                    alt="Foto de restauração 5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração6.jpg" 
+                                    alt="Foto de restauração 6">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração7.jpg" 
+                                    alt="Foto de restauração 7">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carrorestauração8.jpg" 
+                                    alt="Foto de restauração 8">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselBatidas" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselBatidas" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        
+        
+        <section class="restauracao">
+            <h3>Restauração</h3>
+            <div id="carouselRestauracao" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro1.jpg"
+                                    alt="Foto de restauração 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro2.jpg"
+                                    alt="Foto de restauração 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro3.jpg" 
+                                    alt="Foto de restauração 3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro4.jpg" 
+                                    alt="Foto de restauração 4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro5.jpg" 
+                                    alt="Foto de restauração 5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery">
+                            <div class="photo">
+                                <img src="LandingPage-Tedesch/imagens/imagens-servicos/carro5.jpg" 
+                                    alt="Foto de restauração 5">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Cristalização, revitalização de pintura
+                        Polimento</p>
+
+                    <!-- Adicione mais imagens conforme necessário -->
+                </div>
+                <a class="carousel-control-prev" href="#carouselRestauracao" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselRestauracao" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </section>
+        
+
+
+    </div>
 
     <section id="contato">
         <h1 class="titulo">Agende seu Serviço Hoje Mesmo!</h1>
 
         <article class="redes-contato">
             <div class="redes-div">
-                <h2>Entre em contato conosco pelo telefone abaixo:
+                <h2>Entre em contato conosco pelo telefone abaixo:</h2>
 
-                    <p class="redes-text"><a href="https://wa.me/5519988934901" target="_blank" rel="external">
-                            <img src="imagens/icons8-whatsapp-48.png" alt="WhatsApp">
-                            Telefone: (019) / (019)
-                        </a>
-                    </p>
-                    <p class="redes-text">
-                        <img src="imagens/icons8-envelope-35.png" alt="E-mail">
-                        <a href="mailto:tedeschiveiculos@ig.com.br">
-                            E-mail: tededchiveiculos@ig.com.br
-                        </a>
-                    </p>
+                <p class="redes-text"><a href="https://wa.me/5519988934901" target="_blank" rel="external">
+                        <img src="LandingPage-Tedesch/imagens/imagens/icons8-whatsapp-48.png" alt="WhatsApp">
+                        Telefone: (019) / (019)
+                    </a>
+                </p>
+                <p class="redes-text">
+                    <img class="img-email" src="LandingPage-Tedesch/imagens/imagens/icons8-envelope-35.png" alt="E-mail">
+                    <a href="mailto:tedeschiveiculos@ig.com.br">
+                        E-mail: tededchiveiculos@ig.com.br
+                    </a>
+                </p>
             </div>
         </article>
 
-        </h2>
+
         <P class="contato-text">Ou preencha o formulário abaixo.</P>
         <div class="contato">
 
             <div class="contato-img">
-                <img src="imagens/icons8-envelope-240.png" alt="Imagem de um envelope fechado">
+                <img src="LandingPage-Tedesch/imagens/imagens/icons8-envelope-240.png" alt="Imagem de um envelope fechado">
             </div>
 
             <div class="contato-form">
@@ -172,7 +398,10 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="LandingPage-Tedesch/src/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- SEO ajustar depois -->
     <script type="application/ld+json">
@@ -206,6 +435,10 @@
             "closes": "18:00"
           }]
         }
+
+
+
+        
         </script>
 
 </body>
